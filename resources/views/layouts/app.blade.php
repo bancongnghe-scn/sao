@@ -33,29 +33,43 @@
 
             <div class="content-wrapper" x-data="{loading: false}">
                 <!-- Content Header (Page header) -->
-                <div class="content-header">
+                <div class="content-header" style="padding-bottom: 1px;padding-top: 5px;">
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0 color-sc">{{$title}}</h1>
+                                @if (isset($bread_crums))
+                                    <h1 class="m-0 color-sc">{{ array_key_last($bread_crums) }}</h1>  
+                                @endif
+                                
                             </div>
-                            @if($title !== "Trang chủ")
-                                <div class="col-sm-6">
-                                    <ol class="breadcrumb float-sm-right">
-                                        <li class="breadcrumb-item"><a href="/home"><i class="fa-solid fa-house-chimney"></i></a></li>
-                                        <li class="breadcrumb-item active">{{$title}}</li>
-                                    </ol>
-                                </div>
-                            @endif
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li class="breadcrumb-item"><a href="/home"><i class="fa-solid fa-house-chimney"></i></a></li>
+                                    @if (isset($bread_crums))
+                                        @php $count = count($bread_crums); @endphp
+                                        @foreach ($bread_crums as $text => $href)
+                                            @php $is_last = --$count <= 0; @endphp <li class="breadcrumb-item">
+                                                @if (!$is_last && $href !== 'last' && !empty($href))
+                                                    <a href="{{ $href }}">{{ $text }}</a>
+                                                    @else{{ $text }}
+                                                @endif
+                                            </li>
+                                            @php
+                                                if ($href === 'last') {
+                                                    break;
+                                                }
+                                            @endphp
+                                        @endforeach
+                                    @endif
+                                </ol>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Main content -->
                 <section class="content">
-                    <div class="container-fluid">
-                        @yield('content')
-                    </div>
+                    @yield('content')
                 </section>
 
                 <div x-show="loading" class="position-fixed start-50 top-20">

@@ -1,0 +1,254 @@
+/* .table {
+    margin-bottom: 0px !important;
+    width: max-content;
+    white-space: nowrap;
+    font-size: 14px;
+} */
+
+.btn-success {
+    background-color: #379237 !important;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #dbdbdb !important;
+}
+
+#select2-job-title-container,
+#select2-treeview-select-search-container,
+#select2-status-container {
+    font-size: 14px;
+}
+
+#tbody-scroll {
+    height: 100%;
+    overflow: auto;
+}
+
+.custom-toggle::after {
+    display: none !important;
+}
+
+.page-link {
+    border-radius: 50% !important;
+    background: #d8d8d8 !important;
+    border: 1px solid #d8d8d8 !important;
+    margin-right: 5px !important;
+    color: #000;
+}
+
+.custom-image {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.custom-pagination {
+    padding: 15px;
+}
+
+.pagination {
+    margin-bottom: 0px;
+}
+/* 
+.table > thead > tr th {
+    background-color: #e4f0e6;
+} */
+
+.input-search-text {
+    max-width: 200px;
+    padding-left: 0px !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #dbdbdb;
+}
+
+.custom-pagination {
+    border: 1px solid #d2dcd2;
+    border-top: none;
+}
+
+@media only screen and (min-width: 1268px) {
+    .table-responsive {
+        /* border: 1px solid #d2dcd2; */
+        border-bottom: none;
+        border-top: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .filter {
+        flex-direction: column;
+    }
+
+    .filter-name {
+        max-width: 100% !important;
+        padding-right: 0px !important;
+    }
+
+    .filter > div {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .hidden-text {
+        font-size: 0;
+    }
+
+    .btn-add-custom {
+        padding: 0 !important;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    /* .parent-filter {
+        flex-direction: column;
+    } */
+}
+
+@media only screen and (max-width: 1200px) {
+    .parent-filter {
+        flex-direction: column;
+    }
+}
+
+/* Custom checkbox */
+/* .checkbox-wrapper {
+    margin-bottom: 10px;
+} */
+
+.checkbox-wrapper input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-wrapper label {
+    display: inline-block;
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-wrapper label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    position: absolute;
+    left: 50%;
+    top: -5px;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label:before {
+    background-color: #337ab7;
+    /* Màu sắc khi checkbox được chọn */
+    border-color: #337ab7;
+}
+
+.checkbox-wrapper label:after {
+    content: "";
+    display: none;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 18px;
+    top: -3px;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label:after {
+    display: block;
+}
+
+.checkbox-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.checkbox-list div {
+    margin-bottom: 10px;
+}
+
+.checkbox-list input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-list label {
+    display: inline-block;
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-list label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+}
+
+.checkbox-list input[type="checkbox"]:checked + label:before {
+    background-color: #337ab7;
+    /* Màu sắc khi checkbox được chọn */
+    border-color: #337ab7;
+}
+
+.checkbox-list label:after {
+    content: "";
+    display: none;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 18px;
+    top: 2px;
+}
+
+.checkbox-list input[type="checkbox"]:checked + label:after {
+    display: block;
+}
+
+#contractTable th {
+    width: auto !important;
+}
+
+#limit {
+    padding: 0.5rem 0rem !important;
+}
+.dropdowm-filter {
+    padding-left: 10px !important;
+}
+.custom-border {
+    border: 1px solid #ced4da !important;
+}
+.is-challenge {
+    color: #ffd700;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+.employee {
+    position: relative;
+}
+
+.input-group-addon {
+    width: 40px;
+    border: 1px solid #dbdbdb;
+    background: #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0 !important;
+}

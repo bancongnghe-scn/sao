@@ -1,0 +1,589 @@
+/**
+ * ****************************************************************************
+ *
+ * Create Time	:	2024/09/05
+ * Create User	:	vietdt – vietdt@s-connect.net
+ *
+ * @package		:	MODULE Strategy And Objectives
+ * ****************************************************************************
+ */
+ table tbody tr td a {
+    text-decoration: none;
+    color: #377BFF !important;
+}
+.position_e{
+    color: #667085 !important;
+}
+.propose__box-info .position_employ:first-child, .propose__box-info .code_employ:first-child {
+    font-weight: normal !important;
+}
+
+
+
+.wp-table--hierarchy-span {
+    text-align: right;
+    padding-right: 5px;
+    height: 1rem;
+}
+.hierarchy-open-icon::before {
+    content: "\2BC6";
+}
+.hierarchy-close-icon::before {
+    content: "\2BC8";
+}
+.wp-table:hover {
+    color: #337ab7;
+    pointer-events: all;
+}
+.wp-table {
+    position: relative;
+    cursor: pointer;
+}
+.hidden{
+    display: none !important;
+}
+.image-plan{
+    width: 25px!important;
+    height: 25px!important;
+    margin-left: -5px!important;
+    border-radius: 50%;
+}
+.add-plan{
+    width: 25px;
+    height: 25px;
+    margin-left: -5px;
+    line-height: inherit;
+    background-color: darkgray;
+    color: beige;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h2 {
+    font-size: 20px;
+    color: #333;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.search-bar input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    width: 100px;
+}
+.search-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: -35px;
+}
+.plan-list {
+    list-style: none;
+    padding-left: 0rem;
+}
+.plan-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.plan-title{
+    padding: 14px 8px 14px 8px;
+    font-size: 14px;
+}
+.plan-item:hover {
+    background-color: #EBEFF2;
+}
+.plan-item.active {
+    background-color: #c8e3f8;
+}
+.icon i {
+    font-size: 18px;
+    color: #00000075;
+    padding: 10px;
+}
+.head-span{
+    font-size: 1.575rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+.status-title{
+    border-radius: 25px;
+    margin-top: auto;
+    margin-left: 10px;
+    padding: 3px 15px;
+}
+.status-title-m{
+    background-color: #D8D8D8;
+    color: black;
+}
+.status-title-dd{
+    background-color: rgba(24, 144, 255, 0.35);
+    color: #1890FF;
+}
+.status-title-ht{
+    background-color: rgba(55, 146, 55, 0.34);
+    color: #379237;
+}
+.status-title-hh{
+    background-color: rgba(255, 2, 2, 0.29);
+    color: #F44848;
+}
+#btn-edit{
+    font-size: 20px;
+    margin-top: auto;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.toggle-container {
+    display: flex;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 130px;
+}
+/* Nút chuyển */
+.toggle-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #f4f6f8;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+}
+.toggle-btn:first-child {
+    border-right: 1px solid #dcdcdc; /* Viền giữa 2 nút */
+}
+/* Trạng thái khi nút được chọn */
+.toggle-btn.active {
+    background-color: #379237;
+    color: white;
+}
+/* Hiệu ứng khi hover */
+.toggle-btn:hover {
+    background-color: #e0e0e0;
+}
+
+@media (min-width: 1500px) {
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 20% !important;
+    }
+    .col-xl-9 {
+        flex: 0 0 auto;
+        width: 80% !important;
+    }
+}
+.table thead th {
+    border-bottom: 1px solid black !important;
+    background-color: #EBEFF2;
+}
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 1px !important;
+}
+/* .table tbody> :not(caption) > * > * {
+    padding: 16px !important;
+} */
+/* Sơ đồ  */
+.progress-bar{
+    width: 75%;
+    background-color: #dadada !important;
+    height: 8px;
+    border-radius: 5px;
+}
+.progress-text{
+    width: 25%;
+    line-height: normal;
+    margin-top: -5px;
+}
+.image-div{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 90px;
+}
+.user-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: -5px;
+    cursor: pointer !important;
+}
+.user-image-add{
+    line-height: normal;
+    background-color: darkgray;
+    color: beige;
+}
+/* Thiết kế cho toàn bộ cây */
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+.tree li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+.tree li::before, .tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid #ccc;
+    width: 50%;
+    height: 20px;
+}
+.tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #ccc;
+}
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+.tree li:only-child {
+    padding-top: 0;
+}
+.tree li:first-child::before, .tree li:last-child::after {
+    border: 0 none;
+}
+.tree li:last-child::before {
+    border-right: 1px solid #ccc;
+    border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+}
+/* Thiết kế cho các node */
+.tree li .node {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    display: inline-block;
+    min-width: 100px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    width: 175px;
+    height: 90px;
+}
+/* .tree li div:hover {
+    background-color: #e5e5e5;
+    color: #000;
+} */
+.node:not(:only-child)::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 1px);
+    width: 0.5px;
+    height: 20px;
+    background-color: rgb(161, 166, 172);
+    top: var(--top, 110px);
+}
+.company:not(:only-child)::before {
+    top: var(--top, 90px) !important;
+}
+/* Task vụ */
+.status-title-task{
+    border-radius: 25px;
+    margin-top: auto;
+    margin-left: 10px;
+    padding: 3px 15px;
+    font-size: smaller;
+}
+.three-dots{
+    font-weight: bold;
+    font-size: x-large;
+    float: right;
+    margin-top: -15px;
+    cursor: pointer;
+}
+.card-task div{
+    padding: 5px 0px;
+}
+.card-task{
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 20px;
+    margin: 5px 0px;
+    padding: 1.25rem !important;
+}
+.card-task div.add-plan{
+    padding: 2px 2px !important;
+}
+
+/* Tooltip hidden by default */
+.tooltip {
+    opacity: 1 !important;
+}
+.tooltip-content {
+    position: absolute;
+    bottom: 100%; /* Để tooltip nằm phía trên */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    z-index: 100;
+}
+
+.tooltip-three-dots {
+    position: absolute;
+    bottom: 100%; /* Để tooltip nằm phía trên */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: #333;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 130px;
+    text-align: left;
+    z-index: 100;
+    display: grid;
+}
+.tooltip-three-dots span {
+    padding: 5px;
+}
+
+
+.tooltip-content .avatar {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.tooltip-content h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #004CBA;
+}
+
+.tooltip-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.tooltip-content .tooltip-actions a {
+    color: #004CBA;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.tooltip-content .tooltip-actions a:hover {
+    text-decoration: underline;
+}
+
+/* Nút mũi tên phía dưới tooltip */
+.tooltip:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-530%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+.input-group-addon {
+    width: 40px;
+    border: 1px solid #dbdbdb;
+    background: #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0 !important;
+}
+/* phần bên phải model  */
+.task-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    border-right: 5px solid #E6F533;
+    overflow: hidden;
+}
+
+.task-header {
+    background-color: #E6F533;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.task-header h2 {
+    color: #444;
+    font-size: 1.5rem;
+}
+
+.task-info {
+    margin: 15px 0;
+    padding-left: 10px;
+}
+
+.task-row {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+}
+
+.label {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.value {
+    padding-left: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.section h3 {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.person img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.person-name {
+    font-size: 1rem;
+    color: #333;
+}
+
+.person-title {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.icon-plus, .icon-bell {
+    color: #5ac45a;
+    margin-left: 5px;
+}
+
+.icon-bell {
+    color: #ffd700;
+}
+
+/* check box */
+.switch {position: relative;display: inline-block;width: 36px;height: 19px;}
+.switch input {opacity: 0;width: 0;height: 0;}
+.slider {position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;background-color: #ccc;-webkit-transition: .4s;transition: .4}
+.slider:before {position: absolute;content: "";height: 18px;width: 18px;left: 1px;bottom: 1px;background-color: white;-webkit-transition: .4s;transition: .4s;}
+input:checked+.slider {background-color: #00CB2D;}
+input:focus+.slider {box-shadow: 0 0 1px #00CB2D;}
+input:checked+.slider:before {-webkit-transform: translateX(26px);-ms-transform: translateX(16px);transform: translateX(16px);}
+.slider.round {border-radius: 34px;}
+.slider.round:before {border-radius: 50%;}
+
+.slider-background {
+    background-color: aliceblue;
+}
+
+/* popup unit */
+.span-text {
+    display: flex;
+    white-space: pre-line;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 5px;
+}
+/* check box */
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.task-text {
+    display: flex;
+    align-items: center;
+}
+.task-text a {
+    color: #7c8ee5;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.check-complete {
+    margin-right: 10px;
+}
+
+.check-complete {
+    appearance: none;
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid #54B435;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+.check-complete:checked {
+    background-color: #54B435;
+    border-color: #54B435;
+}
+.check-complete:checked::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}

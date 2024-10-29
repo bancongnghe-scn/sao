@@ -1,0 +1,206 @@
+/**
+ * ****************************************************************************
+ *
+ * Create Time	:	2024/09/05
+ * Create User	:	vietdt – vietdt@s-connect.net
+ *
+ * @package		:	MODULE Strategy And Objectives
+ * ****************************************************************************
+ */
+ .head-span{
+    font-size: 1.575rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+ }
+ .status-title{
+    border-radius: 25px;
+    margin-top: auto;
+    margin-left: 10px;
+    padding: 3px 15px;
+ }
+ .status-title-m{
+    background-color: #D8D8D8;
+    color: black;
+ }
+ .status-title-kt{
+    background-color: rgba(24, 144, 255, 0.35);
+    color: #1890FF;
+ }
+ .status-title-dd{
+    background-color: rgba(55, 146, 55, 0.34);
+    color: #379237;
+ }
+ .status-title-hh{
+    background-color: rgba(255, 2, 2, 0.29);
+    color: #F44848;
+ }
+.status-title-bd{
+    background: rgba(237, 235, 252, 1);
+    color: rgba(44, 40, 227, 1);
+}
+
+
+ #btn-edit{
+    font-size: 20px;
+    margin-top: auto;
+    padding-left: 10px;
+    padding-bottom: 5px;
+ }
+
+.arrow-right{
+    margin-top: -20px;
+    margin-left: 10px;
+    position: absolute;
+}
+.arrow-right::before {
+    content: '\2BA1';
+    font-size: 30px;
+}
+
+
+.fa-plan-left{
+    font-size: 12px;
+    float: right;
+    padding-right: 20px;
+    transform: scaleY(2);
+    line-height: inherit;
+}
+.fa-plan-down{
+    font-size: 12px;
+    float: right;
+    padding-right: 15px;
+    transform: scaleX(2);
+    line-height: inherit;
+}
+.fa-plan-down:before {
+    content: "\02C5";
+}
+.fa-plan-left:before {
+    content: "\02C2";
+}
+
+.table td, .table th {
+    border-top: 1px solid #fff !important;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #fff !important;
+}
+.table td, .table th {
+    border-bottom: 1px solid #d2dcd2 !important;
+}
+.col-1{
+    flex: none!important;
+    width: auto!important;
+    padding-right: 0px!important;
+ }
+
+/* Phần bên phải */
+ .task-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    border-right: 5px solid #E6F533;
+    overflow: hidden;
+}
+
+.task-header {
+    background-color: #E6F533;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.task-header h2 {
+    color: #444;
+    font-size: 1.5rem;
+}
+
+.task-info {
+    margin: 15px 0;
+    padding-left: 10px;
+}
+
+.task-row {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+}
+
+.label {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.value {
+    padding-left: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.section h3 {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.person img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.person-name {
+    font-size: 1rem;
+    color: #333;
+}
+
+.person-title {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.icon-plus, .icon-bell {
+    color: #5ac45a;
+    margin-left: 5px;
+}
+
+.icon-bell {
+    color: #ffd700;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.card{
+    --bs-card-border-radius: none !important;
+    box-shadow: none !important;
+    border : none !important;
+    margin-bottom: 0rem;
+}
+
+/* popup unit */
+.span-text {
+    display: flex;
+    white-space: pre-line;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 5px;
+}
