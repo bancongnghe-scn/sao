@@ -7,15 +7,15 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{$title}}</title>
+    <title>{{@$title?? config('app.name')}}</title>
     <link rel="icon" type="image/png" href="/images/fav-sc-icon.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="/plugins/jquery/jquery.min.js"></script>
 
     <!-- Scripts -->
-    <script src='/js/jquery.js'></script>
-    <script src='/js/select2.full.js'></script>
+{{--    <script src='/js/jquery.js'></script>--}}
+{{--    <script src='/js/select2.full.js'></script>--}}
     <script src='/js/adminlte.js'></script>
-
     @vite([
         'resources/css/app.css',
         'resources/sass/app.scss',
@@ -38,9 +38,9 @@
                         <div class="row mb-2">
                             <div class="col-sm-6">
                                 @if (isset($bread_crums))
-                                    <h1 class="m-0 color-sc">{{ array_key_last($bread_crums) }}</h1>  
+                                    <h1 class="m-0 color-sc">{{ array_key_last($bread_crums) }}</h1>
                                 @endif
-                                
+
                             </div>
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-right">

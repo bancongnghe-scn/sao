@@ -9,7 +9,7 @@
 @endsection
 @section('css')
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-    @vite(['resources/css/sao/strategy/vision-mission.css'])
+    @vite(['resources/css/sao/strategy/vision-mission.css', 'resources/css/sao/common.css'])
 @endsection
 @section('content')
     <div class="container-fluid">
@@ -205,7 +205,7 @@
                                 <li class="page-item"><a class="page-link" href="#">47</a></li>
                                 <li class="page-item">
                                     <a class="page-link" href="#" rel="next"
-                                        aria-label="pagination.next">›</a>
+                                       aria-label="pagination.next">›</a>
                                 </li>
                             </ul>
                         </nav>
@@ -213,7 +213,7 @@
                             <label for="">
                                 Hiển thị
                                 <select name="" id="limit" class="form-control-sm"
-                                    style="padding: 0.5rem 0rem !important;">
+                                        style="padding: 0.5rem 0rem !important;">
                                     <option value="25" selected="">25</option>
                                     <option value="50" selected="">50</option>
                                     <option value="75" selected="">75</option>
@@ -377,7 +377,7 @@
             </div>
         </div>
     </div>
-    
+
     {{-- @include('sao.strategy.vision-mission.popup-new-company') --}}
     @include('sao.strategy.vision-mission.popup-new-unit')
 @endsection

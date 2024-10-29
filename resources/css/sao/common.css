@@ -49,7 +49,7 @@
 .pagination {
     margin-bottom: 0px;
 }
-/* 
+/*
 .table > thead > tr th {
     background-color: #e4f0e6;
 } */
@@ -251,4 +251,96 @@
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     margin-bottom: 0 !important;
+}
+
+.status-green{
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #EFFFF2;
+    color: #54B435;
+    border-radius: 16px;
+}
+
+.status-violet{
+    background-color: #F0ECFA;
+    color: #8638E5;
+    border-radius: 16px;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.status-gray{
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #ECEFF0;
+    color: #667085;
+    border-radius: 16px;
+}
+.status-red{
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #FFE1E1;
+    color: #FF4D4D;
+    border-radius: 16px;
+}
+.status-blue{
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #F3FCFF;
+    color: #387BFF;
+    border-radius: 16px;
+}
+.btn-cancel{
+    background-color: white !important;
+    color: #379237 !important;
+    border-color: #379237 !important;
+}
+
+.btn-cancel:hover{
+    background-color: #379237 !important;
+    color: white !important;
+}
+
+.btn-reject{
+    background-color: white !important;
+    color: #F31111 !important;
+    border-color: #F31111 !important;
+}
+
+.btn-reject:hover{
+    background-color: #F31111 !important;
+    color: white !important;
+}
+
+.btn-transition{
+    background-color: #4090BD !important;
+    color: white !important;
+}
+
+.btn-detail{
+    background-color: #FFF !important;
+    color: #101828 !important;
+}
+
+.page-item.active .page-link {
+    background: #3a923a !important;
 }

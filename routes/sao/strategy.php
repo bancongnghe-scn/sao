@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SAO\Strategy\BuildController;
 use App\Http\Controllers\SAO\Strategy\VisionMissionController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,5 +21,12 @@ Route::prefix('sao/strategy')
             Route::get('vision-mission', 'index')->name('sao.strategy.vision-mission.index');
             Route::get('vision-mission/detail-company', 'detailCompany')->name('sao.strategy.vision-mission.detail-company');
             Route::get('vision-mission/detail-unit', 'detailUnit')->name('sao.strategy.vision-mission.detail-unit');
+        });
+
+        Route::controller(BuildController::class)->group(function () {
+            Route::get('build', 'index')->name('sao.strategy.build.index');
+            Route::get('build/detail-company', 'detailCompany')->name('sao.strategy.build.detail-company');
+            Route::get('build/detail-unit', 'detailUnit')->name('sao.strategy.build.detail-unit');
+//            Route::get('vision-mission/detail-unit', 'detailUnit')->name('sao.strategy.vision-mission.detail-unit');
         });
     });
