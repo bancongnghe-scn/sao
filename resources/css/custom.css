@@ -1,0 +1,82 @@
+.form-control {
+    background: white;
+}
+
+.bg-sc {
+    background: #379237 !important;
+}
+
+.btn-sc {
+    background: #379237;
+    color: white;
+}
+
+.btn-sc:hover {
+    background: #379237;
+    color: white;
+    opacity: 0.9;
+}
+
+.color-sc {
+    color: #379237 !important;
+}
+
+textarea.form-control {
+    min-height: 10rem;
+}
+
+.form-select {
+    background-color: white;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.top-20 {
+    top: 5rem;
+}
+
+.right-2 {
+    right: 0.5rem;
+}
+
+.select2-selection__choice {
+    background-color: #0c84ff !important;
+}
+
+.select2-selection__choice__remove {
+    color: white !important;
+}
+
+.color-red {
+    color: red;
+}
+
+.disc {
+    list-style-type: disc !important;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.select2-container .select2-selection--single {
+    height: calc(2.25rem + 2px);
+}
+
+.bg-white-opacity-10-hover:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-white-opacity-10 {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pl-10 {
+    padding-left: 2.5rem !important;
+}
+
+
+
+
