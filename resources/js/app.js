@@ -8,6 +8,9 @@ import './bootstrap';
 import '@fortawesome/fontawesome-free/js/all.js';
 import Alpine from 'alpinejs'
 import './helpers.js'
+// Import jQuery UI CSS và JS
+import 'jquery-ui/themes/base/all.css';
+import 'jquery-ui/ui/widgets/datepicker';
 
 
 window.Alpine = Alpine
