@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="/plugins/select2/css/select2.min.css">
 @endsection
 @section('css')
-    @vite(['resources/css/sao/strategy/build.css', 'resources/css/sao/common.css'])
+    @vite(['resources/css/sao/strategy/build.css', 'resources/css/sao/common.css', 'resources/css/comment.css'])
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 @endsection
 @section('content')
 <div class="container-fluid">
@@ -93,7 +95,7 @@
                                     <div class="col-12 pt-3 pb-2">
                                         <div class="form-group">
                                             <div class="proposal-comment">
-{{--                                                @include('comment.form-create-comment', ['comment_type' => 1])--}}
+                                                @include('comment.form-create-comment', ['comment_type' => 2])
                                             </div>
                                         </div>
                                     </div>

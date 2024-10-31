@@ -49,7 +49,7 @@
 
                         <div class="row">
                             <div class="form-group">
-                                <textarea class="form-control common-summer-note item" rows="20" name="" maxlength="500"></textarea>
+                                <textarea class="form-control common-summer-note item" rows="10" name="" maxlength="500"></textarea>
                             </div>
                         </div>
                         <div class="row">

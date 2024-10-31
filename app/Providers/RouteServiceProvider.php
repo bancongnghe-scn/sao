@@ -38,6 +38,9 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('web')
                 ->group(base_path('routes/sao/strategy.php'));
+
+            Route::middleware('web')
+                ->group(base_path('routes/sao/objectives.php'));
         });
     }
 }

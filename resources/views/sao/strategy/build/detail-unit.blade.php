@@ -100,7 +100,7 @@
                                             <div class="form-group">
                                                 <div class="proposal-comment">
                                                     @include('comment.form-create-comment', [
-                                                        'comment_type' => 1,
+                                                        'comment_type' => 2,
                                                     ])
                                                 </div>
                                             </div>

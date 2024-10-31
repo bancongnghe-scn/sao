@@ -344,3 +344,10 @@
 .page-item.active .page-link {
     background: #3a923a !important;
 }
+
+.table>thead>tr th {
+    background-color: #e4f0e6;
+}
+.table>tbody>tr td {
+    background-color: white;
+}

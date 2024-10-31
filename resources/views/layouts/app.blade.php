@@ -14,7 +14,7 @@
 
     <!-- Scripts -->
 {{--    <script src='/js/jquery.js'></script>--}}
-{{--    <script src='/js/select2.full.js'></script>--}}
+    <script src='/js/select2.full.js'></script>
     <script src='/js/adminlte.js'></script>
     @vite([
         'resources/css/app.css',
@@ -72,12 +72,12 @@
                     @yield('content')
                 </section>
 
-                <div x-show="loading" class="position-fixed start-50 top-20">
-                    <div class="spinner-border text-primary" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                    <div class="position-fixed top-0 right-0 bottom-0 left-0 bg-black opacity-20" style="z-index: 40;"></div>
-                </div>
+{{--                <div x-show="loading" class="position-fixed start-50 top-20">--}}
+{{--                    <div class="spinner-border text-primary" role="status">--}}
+{{--                        <span class="sr-only">Loading...</span>--}}
+{{--                    </div>--}}
+{{--                    <div class="position-fixed top-0 right-0 bottom-0 left-0 bg-black opacity-20" style="z-index: 40;"></div>--}}
+{{--                </div>--}}
             </div>
 
             <aside class="control-sidebar control-sidebar-dark">

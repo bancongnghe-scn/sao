@@ -27,7 +27,7 @@
         </div>
         <div class="nested" style="" id="itemB">
         @for($i = 1; $i< 4; $i++)
-            <div class="sub-point tooltip-main">
+            <div class="point tooltip-main">
                 <span class="text-year mr-1">[2025-2030]</span> Đảm bảo cổng thông tin về khách hàng thông suốt; nguồn thông tin khách hàng nhất quán,
                 <span class="tooltiptext text-start p-2" >
                     <span class="font-weight-bold">Hành động chiến lược</span>
@@ -114,7 +114,7 @@
         </div>
         <div class="nested" style="">
             @for($i = 1; $i< 4; $i++)
-                <div class="sub-point tooltip-main">
+                <div class="point tooltip-main">
                     <span class="text-year mr-1">[2025-2030]</span> Đảm bảo cổng thông tin về khách hàng thông suốt; nguồn thông tin khách hàng nhất quán,
                     <span class="tooltiptext text-start p-2">
                         <span class="font-weight-bold">Hành động chiến lược</span>

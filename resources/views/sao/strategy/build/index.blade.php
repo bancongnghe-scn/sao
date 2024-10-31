@@ -41,10 +41,9 @@
         </div>
     </div>
 
-    {{-- @include('sao.strategy.vision-mission.popup-new-company') --}}
     @include('sao.strategy.build.popup.popup-create')
 @endsection
 @section('js')
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-{{--    @vite(['resources/js/sao/strategy/vision-mission.js'])--}}
+    @vite(['resources/js/sao/strategy/build.js'])
 @endsection

@@ -1,10 +1,27 @@
 $(function () {
     initialize();
     popup_create_strategic_objectives();
+    tree()
 });
 
-function initialize()
-{
+function initialize() {
+
+    $(document).on('focus', '.input-group.date', function() {
+        $(this).datepicker({
+            container: "body",
+            format: "dd/mm/yyyy",
+            changeMonth: true,
+            changeYear: true,
+            showOn: "focus",
+            showButtonPanel: true,
+            clearBtn: true,
+            language: "vi",
+            orientation: "auto",
+            autoclose: true,
+            todayHighlight: true
+        });
+    });
+
     $('.select2').select2({
         placeholder: 'Chọn đơn vị tham gia',
         dropdownParent: $('body')
@@ -32,10 +49,55 @@ function initialize()
             icon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
         }
     });
+
+    // document.querySelectorAll('.nested').forEach(nested => {
+    //     console.log(nested)
+    //     // Tìm tất cả các .point là con trực tiếp của .nested hiện tại
+    //     const directPoints = Array.from(nested.children).filter(child => child.classList.contains('point'));
+    //     if (directPoints.length > 0) {
+    //         // Chỉ thêm lớp last-point vào phần tử .point cuối cùng trong các con trực tiếp
+    //         directPoints[directPoints.length - 1].classList.add('last-point');
+    //     }
+    //
+    //     if (directPoints.length > 1) {
+    //         const firstPoint = directPoints[0];
+    //         const lastPoint = directPoints[directPoints.length - 1];
+    //
+    //         // Lấy khoảng cách từ .point đầu tiên đến .point cuối cùng
+    //         const distance = lastPoint.getBoundingClientRect().top - firstPoint.getBoundingClientRect().top;
+    //
+    //         // Log khoảng cách ra console
+    //         console.log(`Khoảng cách từ .point đầu tiên đến .point cuối cùng trong .nested hiện tại là: ${distance}px`);
+    //
+    //         // Nếu bạn muốn sử dụng khoảng cách này cho mục đích khác, bạn có thể lưu nó vào một biến hoặc thuộc tính
+    //     }
+    // });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('.nested').forEach(nested => {
+            const directPoints = Array.from(nested.children).filter(child => child.classList.contains('point'));
+
+            if (directPoints.length > 1) {
+                const firstPoint = directPoints[0];
+                const lastPoint = directPoints[directPoints.length - 1];
+
+                const distance = lastPoint.getBoundingClientRect().top - firstPoint.getBoundingClientRect().top;
+                console.log(`Khoảng cách từ .point đầu tiên đến .point cuối cùng là: ${distance}px`);
+            }
+        });
+    });
+
+
+
+
+
+
+
+
+
 }
 
-function popup_create_strategic_objectives ()
-{
+function popup_create_strategic_objectives () {
     $(document).ready(function() {
 
         // Biến để đếm số lượng hàng chính
@@ -166,4 +228,67 @@ function popup_create_strategic_objectives ()
             });
         }
     });
+}
+
+function tree()
+{
+    $.fn.extend({
+        treed: function (o) {
+
+            var openedClass = 'fa-minus-circle';
+            var closedClass = 'fa-plus-circle';
+
+            if (typeof o != 'undefined'){
+                if (typeof o.openedClass != 'undefined'){
+                    openedClass = o.openedClass;
+                }
+                if (typeof o.closedClass != 'undefined'){
+                    closedClass = o.closedClass;
+                }
+            };
+
+            //initialize each of the top levels
+            var tree = $(this);
+            tree.addClass("tree");
+            tree.find('li').has("ul").each(function () {
+                var branch = $(this); //li with children ul
+                branch.prepend("<i class='indicator fas " + closedClass + "'></i>");
+                branch.addClass('branch');
+                branch.on('click', function (e) {
+                    if (this == e.target) {
+                        var icon = $(this).children('i:first');
+                        icon.toggleClass(openedClass + " " + closedClass);
+                        $(this).children().children().toggle();
+                    }
+                })
+                branch.children().children().toggle();
+            });
+            //fire event from the dynamically added icon
+            tree.find('.branch .indicator').each(function(){
+                $(this).on('click', function () {
+                    $(this).closest('li').click();
+                });
+            });
+            //fire event to open branch if the li contains an anchor instead of text
+            tree.find('.branch>a').each(function () {
+                $(this).on('click', function (e) {
+                    $(this).closest('li').click();
+                    e.preventDefault();
+                });
+            });
+            //fire event to open branch if the li contains a button instead of text
+            tree.find('.branch>button').each(function () {
+                $(this).on('click', function (e) {
+                    $(this).closest('li').click();
+                    e.preventDefault();
+                });
+            });
+        }
+    });
+
+    //Initialization of treeviews
+
+    $('#tree1').treed();
+
+    $('#tree2').treed({openedClass:'fa-folder-open', closedClass:'fa-folder'});
 }
