@@ -40,7 +40,7 @@ class MenuController extends Controller
     {
         $request->validate([
             'name'              => 'required|string',
-            'icon'              => 'required|string',
+            // 'icon'              => 'required|string',
             'url'               => 'nullable|string',
             'order'             => 'required|integer',
             'parent_id'         => 'nullable|integer',
@@ -99,7 +99,7 @@ class MenuController extends Controller
     {
         $request->validate([
             'name'             => 'required|string',
-            'icon'             => 'required|string',
+            // 'icon'             => 'required|string',
             'url'              => 'nullable|string',
             'order'            => 'required|integer',
             'parent_id'        => 'nullable|integer',

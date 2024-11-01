@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
 
 class CheckAuth
@@ -14,14 +15,15 @@ class CheckAuth
     {
         $secretKey     = env('SECRET_KEY');
         $sessionCookie = @$_COOKIE['scn_session'];
-        // if (!Auth::check()) {
-        if (!Session::has('auth_user')) {
+        if (!Auth::check()) {
+        // if (!Session::has('auth_user')) {
             $data = callApiSSO(env('API_GET_SESSION'), $sessionCookie, $secretKey);
+            Log::info($data);
             if (isset($data['code']) && Response::HTTP_OK === $data['code']) {
                 $user = @$data['data']['user'];
-                Session::put('auth_user', $user);
+                // Session::put('auth_user', $user);
 
-                // Auth::loginUsingId($user['id']);
+                Auth::loginUsingId($user['id']);
                 return $next($request);
             }
             Cookie::queue(Cookie::forget('sso-authen'));

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::middleware(['checkAuth'])->group(function () {
 Route::prefix('sao/strategy')
     ->namespace('App\Http\Controllers\SAO')->group(function () {
         Route::controller(VisionMissionController::class)->group(function () {
@@ -30,3 +30,4 @@ Route::prefix('sao/strategy')
 //            Route::get('vision-mission/detail-unit', 'detailUnit')->name('sao.strategy.vision-mission.detail-unit');
         });
     });
+});
