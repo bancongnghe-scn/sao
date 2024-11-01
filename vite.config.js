@@ -17,6 +17,7 @@ export default defineConfig({
                 "resources/js/rbac/api/apiMenu.js",
                 "resources/js/rbac/api/apiPermission.js",
                 "resources/js/rbac/api/apiRole.js",
+                'resources/js/app/api/apiUser.js',
                 "resources/js/rbac/menu.js",
                 "resources/js/rbac/permission.js",
                 "resources/js/rbac/role.js",
