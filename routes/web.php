@@ -12,28 +12,19 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-// */
-// Route::middleware(['authenSSO'])->group(function () {
-//     Route::get('authen', function () {});
-// });
+*/
+Route::middleware(['authenSSO'])->group(function () {
+    Route::get('authen', function () {});
+});
 
-// Route::middleware(['checkAuth'])->group(function () {
-//     //============= code trong nay =============
-//     Route::view('/', 'home')->name('home');
-//     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+Route::middleware(['checkAuth'])->group(function () {
+    //============= code trong nay =============
+    Route::view('/', 'home')->name('home');
+    Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
-//     Route::prefix('rbac')->group(function () {
-//         Route::view('role/list', 'rbac.role.list');
-//         Route::view('permission/list', 'rbac.permission.list');
-//         Route::view('menu/list', 'rbac.menu.list');
-//     });
-// });
-
-
-Route::view('/', 'home')->name('home');
-Route::view('/home', 'home')->name('home');
-Route::prefix('rbac')->group(function () {
-    Route::view('role/list', 'rbac.role.list');
-    Route::view('permission/list', 'rbac.permission.list');
-    Route::view('menu/list', 'rbac.menu.list');
+    Route::prefix('rbac')->group(function () {
+        Route::view('role/list', 'rbac.role.list');
+        Route::view('permission/list', 'rbac.permission.list');
+        Route::view('menu/list', 'rbac.menu.list');
+    });
 });

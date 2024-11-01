@@ -16,9 +16,9 @@
                     </div>
 
                     <div class="col-6">
-                        <label class="form-label">Icon<label class="color-red">*</label></label>
+                        <label class="form-label">Icon</label>
                         <select class="form-select select2 icon-select2" id="selectIcon" data-placeholder="Chọn icon ..." x-model="menu.icon">
-                            <option value=""></option>
+                            <option value="0">Chọn</option>
                             @foreach($fontAwesomeIcons as $key => $value)
                                 <option value="{{ $value }}">{{$key}}</option>
                             @endforeach
