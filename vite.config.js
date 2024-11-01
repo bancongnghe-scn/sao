@@ -14,6 +14,7 @@ export default defineConfig({
                 "resources/css/sao/strategy/build.css",
                 "resources/js/sao/strategy/build.js",
                 "resources/sass/training.scss",
+                "resources/js/rbac/api/apiMenu.js",
 
                 // ========== comments ==========
                 "resources/css/comment.css",
