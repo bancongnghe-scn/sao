@@ -15,10 +15,10 @@
                 {{-- onclick="FirstSt()"  --}}
                 {{-- data-bs-target="#rightModaSt" data-bs-toggle="modal" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" --}}
                 >
-                    {{-- <img onerror="this.src='{{asset('images/fav-sc-icon.png')}}'" src="{{ Session::get('auth_user')['avatar'] }}" class="user-image img-circle elevation-1 user-default-avatar my-sefl-avatar">
-                    <span class="display-name-u text-white">{{ Session::get('auth_user')['name'] }} <i class="bi-caret-down-fill"></i> </span> --}}
-                    <img onerror="this.src='{{asset('images/fav-sc-icon.png')}}'"  class="user-image img-circle elevation-1 user-default-avatar my-sefl-avatar">
-                    <span class="display-name-u text-white"><i class="bi-caret-down-fill"></i> </span>
+                    <img src="{{ env('URL_SERVER').Session::get('auth_user')['avatar'] }}" class="user-image img-circle elevation-1 user-default-avatar my-sefl-avatar">
+                    <span class="display-name-u text-white">{{ Session::get('auth_user')['name'] }} <i class="bi-caret-down-fill"></i> </span>
+                    <!-- <img onerror="this.src='{{asset('images/fav-sc-icon.png')}}'"  class="user-image img-circle elevation-1 user-default-avatar my-sefl-avatar">
+                    <span class="display-name-u text-white"><i class="bi-caret-down-fill"></i> </span> -->
                 </a>
             </li>
         </ul>

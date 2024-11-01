@@ -20,7 +20,7 @@ Route::middleware(['authenSSO'])->group(function () {
 Route::middleware(['checkAuth'])->group(function () {
     //============= code trong nay =============
     Route::view('/', 'home')->name('home');
-    Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+    
 
     Route::prefix('rbac')->group(function () {
         Route::view('role/list', 'rbac.role.list');
@@ -28,3 +28,6 @@ Route::middleware(['checkAuth'])->group(function () {
         Route::view('menu/list', 'rbac.menu.list');
     });
 });
+
+Route::view('/error', 'error')->name('error');
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');

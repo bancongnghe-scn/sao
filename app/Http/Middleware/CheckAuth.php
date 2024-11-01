@@ -18,19 +18,19 @@ class CheckAuth
         if (!Auth::check()) {
         // if (!Session::has('auth_user')) {
             $data = callApiSSO(env('API_GET_SESSION'), $sessionCookie, $secretKey);
-            Log::info($data);
             if (isset($data['code']) && Response::HTTP_OK === $data['code']) {
                 $user = @$data['data']['user'];
-                // Session::put('auth_user', $user);
-
+                Session::put('auth_user', $user);
                 Auth::loginUsingId($user['id']);
+                if (!Auth::check()) {
+                    return redirect('/error');
+                }
                 return $next($request);
             }
             Cookie::queue(Cookie::forget('sso-authen'));
 
             return redirect(env('URL_SERVER_SSO') . '/login?redirect_url=' . env('URL_CLIENT_SSO'));
         }
-
         if (!Cookie::get('sso-authen')) {
             $data = callApiSSO(env('API_GET_SESSION'), $sessionCookie, $secretKey);
             if (isset($data['code']) && Response::HTTP_OK === $data['code']) {
@@ -38,9 +38,8 @@ class CheckAuth
 
                 return $next($request);
             }
-            // Auth::logout();
+            Auth::logout();
             Session::forget('auth_user');
-
             return redirect(env('URL_SERVER_SSO') . '/login?redirect_url=' . env('URL_CLIENT_SSO'));
         }
 
