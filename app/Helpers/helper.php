@@ -53,6 +53,7 @@ if (!function_exists('response_error')) {
 //call API server sso method
 function callApiSSO($url, $sessionCookie, $secretKey)
 {
+    Log::info('1111111111111111');
     try {
         $response = Illuminate\Support\Facades\Http::withHeaders([
             'Origin'      => env('URL_CLIENT_SSO'),
