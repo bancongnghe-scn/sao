@@ -10,7 +10,6 @@
     <title>{{@$title?? config('app.name')}}</title>
     <link rel="icon" type="image/png" href="/images/fav-sc-icon.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <script src="/plugins/jquery/jquery.min.js"></script>
     <!-- Scripts -->
    <script src='/js/jquery.js'></script>
    <script src='/js/select2.full.js'></script>

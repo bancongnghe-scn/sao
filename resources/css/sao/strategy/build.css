@@ -103,11 +103,10 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.info-header h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #344054;
-    margin-bottom: 20px;
+.info-header .title-info {
+    font-size: 22px;
+    font-weight: 600;
+    color: #21252B;
 }
 
 .info-content {
@@ -215,79 +214,6 @@ svg {
 
 .collapse-content {
     margin-left: 25px;
-}
-
-.main-point {
-    position: relative;
-    padding-left: 60px;
-    margin-bottom: 20px;
-    display: flex;
-}
-
-.main-point::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -10px;
-    width: 55px;
-    height: 2px;
-    background-color: #BFBFBF;
-}
-
-.main-point::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 45px;
-    margin-top: -5px;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 10px solid #667085;
-}
-
-.nested {
-    position: relative;
-    padding-left: 20px;
-    margin-left: 20px;
-}
-
-.nested::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    width: 2px;
-    height: calc(100% - 0px);
-    background-color: #BFBFBF;
-}
-
-
-.point {
-    position: relative;
-    padding-left: 45px;
-    margin-bottom: 10px;
-    display: flex;
-}
-
-.point::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -10px;
-    width: 40px;
-    height: 2px;
-    background-color: #BFBFBF;
-}
-
-.point::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    margin-top: -5px;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 10px solid #667085;
 }
 
 .tooltip-main {
@@ -432,7 +358,6 @@ textarea.form-control {
     padding:0 3em;
     line-height:2em;
     color:#667085;
-    font-weight:700;
     position:relative
 }
 .tree ul li:before {
@@ -467,4 +392,20 @@ textarea.form-control {
     margin:0px 0px 0px 0px;
     padding:0px 0px 0px 0px;
     outline: 0;
+}
+
+.level-1{
+    font-weight: 900;
+}
+
+.level-2{
+    font-weight: 700;
+}
+
+.level-3{
+    font-weight: 500;
+}
+
+.level-4{
+    font-weight: 300;
 }

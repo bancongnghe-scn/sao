@@ -4,12 +4,10 @@
 @extends('layouts.app')
 @section('sidebar')
     @include('sao.sidebar')
-    <link rel="stylesheet" href="/plugins/select2/css/select2.min.css">
+{{--    <link rel="stylesheet" href="/plugins/select2/css/select2.min.css">--}}
 @endsection
 @section('css')
     @vite(['resources/css/sao/strategy/build.css', 'resources/css/sao/common.css', 'resources/css/comment.css'])
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 @endsection
 @section('content')
 <div class="container-fluid">
@@ -19,18 +17,31 @@
                 <div class="col-xl-12 col-md-12 mb-2 align-middle d-flex justify-content-start">
                     <span class="title-strategy mr-2">Chiến lược phát triển Tập đoàn SC tầm nhìn 2024-2030</span>
                     <div class="d-flex align-self-center justify-content-center">
-                        <span class="status-gray">
-                            Mới tạo
-                        </span>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row align-items-center col-12 col-sm-12 col-lg-12 col-xl-3 mr-0 pr-0">
                 <div class="d-flex justify-content-end">
                     <div>
-                        <button class="btn btn-sm btn-success mr-2 h-100 text-nowrap" data-bs-target="#addCreateStrategicObjectives" data-bs-toggle="modal">
-                            <i class="bi bi-plus"></i>
+                        <button class="btn btn-sm btn-outline-success mr-2 h-100 text-nowrap" data-bs-target="#addCreateStrategicObjectives" data-bs-toggle="modal">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4V20M4 12H20" stroke="#379237" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
                             <span class="">{{ __('Thiết lập mục tiêu') }}</span>
+                        </button>
+
+                        <button class="btn btn-sm btn-success mr-2 h-100 text-nowrap" data-bs-target="#addCreateStrategicObjectives" data-bs-toggle="modal">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.7119 3.3641L2.24367 8.29104C2.09671 8.33249 1.96591 8.4178 1.86874 8.53558C1.77157 8.65336 1.71266 8.79799 1.69989 8.95015C1.68712 9.1023 1.7211 9.25473 1.79728 9.38706C1.87346 9.51939 1.98821 9.62531 2.1262 9.69068L10.1522 13.4925C10.3088 13.5666 10.4348 13.6927 10.509 13.8492L14.3107 21.8752C14.3761 22.0132 14.482 22.128 14.6144 22.2041C14.7467 22.2803 14.8991 22.3143 15.0513 22.3015C15.2034 22.2888 15.3481 22.2299 15.4658 22.1327C15.5836 22.0355 15.6689 21.9047 15.7104 21.7578L20.6373 4.28953C20.6735 4.16122 20.6749 4.02558 20.6412 3.89658C20.6075 3.76758 20.5401 3.64988 20.4458 3.55561C20.3515 3.46134 20.2339 3.3939 20.1048 3.36024C19.9758 3.32658 19.8402 3.32791 19.7119 3.3641Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.3926 13.6059L14.6352 9.36328" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+
+                            <span class="">{{ __('Triển khai') }}</span>
                         </button>
                     </div>
                 </div>
@@ -45,8 +56,22 @@
             <div class="col-12 col-sm-12 col-lg-12 col-xl-3 right-panel">
 
                 <div class="info-container">
-                    <div class="info-header">
-                        <h2>Thông tin chung</h2>
+                    <div class="info-header d-flex align-self-center justify-content-between align-middle">
+                        <div class="d-flex">
+                            <span class="title-info text-nowrap">Thông tin chung </span>
+                            <div class="d-flex align-self-center justify-content-center ml-2">
+                                <span class="status-gray" style="width: 80px">
+                                    Mới tạo
+                                </span>
+                            </div>
+                        </div>
+
+                        <button class="btn">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.75 21.5V19.3284C2.75 18.9969 2.8817 18.679 3.11611 18.4445L16.5303 5.03033C17.342 4.21865 18.658 4.21865 19.4697 5.03033C20.2813 5.84201 20.2813 7.15799 19.4697 7.96967L6.05546 21.3839C5.82104 21.6183 5.50309 21.75 5.17157 21.75H3C2.86193 21.75 2.75 21.6381 2.75 21.5Z" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 7.5L17 9.5" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                     </div>
 
                     <div class="info-content">
@@ -134,5 +159,5 @@
 @endsection
 @section('js')
     @vite(['resources/js/sao/strategy/build.js'])
-    <script src="/plugins/select2/js/select2.full.min.js"></script>
+{{--    <script src="/plugins/select2/js/select2.full.min.js"></script>--}}
 @endsection

@@ -309,6 +309,17 @@
     color: #387BFF;
     border-radius: 16px;
 }
+.status-yellow{
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #FFF3D6;
+    color: #ECAB12;
+    border-radius: 16px;
+}
 .btn-cancel{
     background-color: white !important;
     color: #379237 !important;

@@ -60,7 +60,15 @@
                             <th class="text-center">Năm áp dụng</th>
                             <th class="text-center">Thời gian tạo</th>
                             <th class="text-center">Người tạo</th>
-                            <th class="text-center">Trạng thái</th>
+                            <th class="text-center">Trạng thái chiến lược</th>
+                            <th class="text-center">
+                                Áp dụng
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 13.625C10.6066 13.625 13.125 11.1066 13.125 8C13.125 4.8934 10.6066 2.375 7.5 2.375C4.3934 2.375 1.875 4.8934 1.875 8C1.875 11.1066 4.3934 13.625 7.5 13.625Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 5.1875V8.46875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 11.1641C7.8236 11.1641 8.08594 10.9017 8.08594 10.5781C8.08594 10.2545 7.8236 9.99219 7.5 9.99219C7.1764 9.99219 6.91406 10.2545 6.91406 10.5781C6.91406 10.9017 7.1764 11.1641 7.5 11.1641Z" fill="black"/>
+                                </svg>
+                            </th>
                             <th class="text-center">Hành động</th>
                         </tr>
                         </thead>
@@ -93,14 +101,37 @@
                                 </div>
                             </td>
                             <td class="text-center align-middle">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                </div>
+                            </td>
+                            <td class="text-center align-middle">
                                 <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
                                     <span class="cursor-hand">
-                                        <i class="bi bi-pencil-square ic20 ctx-menu-icon-color"></i>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0007 3.33203V16.6654M3.33398 9.9987H16.6673" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                     </span>
                                 </a>
-                                <span class="cursor-hand text-danger">
-                                    <i class="bi bi-trash ic20"></i>
-                                </span>
+                                <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
+                                    <span class="cursor-hand">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.75 21V18.8284C2.75 18.4969 2.8817 18.179 3.11611 17.9445L16.5303 4.53033C17.342 3.71865 18.658 3.71865 19.4697 4.53033C20.2813 5.34201 20.2813 6.65799 19.4697 7.46967L6.05546 20.8839C5.82104 21.1183 5.50309 21.25 5.17157 21.25H3C2.86193 21.25 2.75 21.1381 2.75 21Z" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 7L17 9" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
+                                    <span class="cursor-hand">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 6H21" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5 6V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V6" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 6V4C8 2.89543 8.89543 2 10 2H14C15.1046 2 16 2.89543 16 4V6" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 12L10 16" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 12L14 16" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
                             </td>
                         </tr>
                         <tr>
@@ -131,14 +162,38 @@
                                 </div>
                             </td>
                             <td class="text-center align-middle">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                </div>
+                            </td>
+                            <td class="text-center align-middle">
                                 <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
                                     <span class="cursor-hand">
-                                        <i class="bi bi-pencil-square ic20 ctx-menu-icon-color"></i>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.75 21V18.8284C2.75 18.4969 2.8817 18.179 3.11611 17.9445L16.5303 4.53033C17.342 3.71865 18.658 3.71865 19.4697 4.53033C20.2813 5.34201 20.2813 6.65799 19.4697 7.46967L6.05546 20.8839C5.82104 21.1183 5.50309 21.25 5.17157 21.25H3C2.86193 21.25 2.75 21.1381 2.75 21Z" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 7L17 9" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                     </span>
                                 </a>
-                                <span class="cursor-hand text-danger">
-                                    <i class="bi bi-trash ic20"></i>
-                                </span>
+                                <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
+                                    <span class="cursor-hand">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 6H21" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5 6V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V6" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 6V4C8 2.89543 8.89543 2 10 2H14C15.1046 2 16 2.89543 16 4V6" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 12L10 16" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 12L14 16" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
+                                    <span class="cursor-hand">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.2119 3.3641L2.74367 8.29104C2.59671 8.33249 2.46591 8.4178 2.36874 8.53558C2.27157 8.65336 2.21266 8.79799 2.19989 8.95015C2.18712 9.1023 2.2211 9.25473 2.29728 9.38706C2.37346 9.51939 2.48821 9.62531 2.6262 9.69068L10.6522 13.4925C10.8088 13.5666 10.9348 13.6927 11.009 13.8492L14.8107 21.8752C14.8761 22.0132 14.982 22.128 15.1144 22.2041C15.2467 22.2803 15.3991 22.3143 15.5513 22.3015C15.7034 22.2888 15.8481 22.2299 15.9658 22.1327C16.0836 22.0355 16.1689 21.9047 16.2104 21.7578L21.1373 4.28953C21.1735 4.16122 21.1749 4.02558 21.1412 3.89658C21.1075 3.76758 21.0401 3.64988 20.9458 3.55561C20.8515 3.46134 20.7339 3.3939 20.6048 3.36024C20.4758 3.32658 20.3402 3.32791 20.2119 3.3641Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.8926 13.6059L15.1352 9.36328" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
                             </td>
                         </tr>
                         <tr>
@@ -163,20 +218,69 @@
                             </td>
                             <td class="text-center align-middle">
                                 <div class="align-self-center justify-content-center tab_user">
-                                    <span class="status-green">
-                                        Xuất bản
+                                    <span class="status-blue">
+                                        Đang áp dụng
                                     </span>
+                                </div>
+                            </td>
+                            <td class="text-center align-middle">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
                                 </div>
                             </td>
                             <td class="text-center align-middle">
                                 <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
                                     <span class="cursor-hand">
-                                        <i class="bi bi-pencil-square ic20 ctx-menu-icon-color"></i>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.75 21V18.8284C2.75 18.4969 2.8817 18.179 3.11611 17.9445L16.5303 4.53033C17.342 3.71865 18.658 3.71865 19.4697 4.53033C20.2813 5.34201 20.2813 6.65799 19.4697 7.46967L6.05546 20.8839C5.82104 21.1183 5.50309 21.25 5.17157 21.25H3C2.86193 21.25 2.75 21.1381 2.75 21Z" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 7L17 9" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                     </span>
                                 </a>
-                                <span class="cursor-hand text-danger">
-                                    <i class="bi bi-trash ic20"></i>
-                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center align-middle">
+                                4
+                            </td>
+                            <td class="text-left align-middle">
+                                <a href="/sao/strategy/build/detail-company" class="text-primary" target="_blank">
+                                    Chiến lược BU cấp quyền nhân vật 2025-2030
+                                </a>
+                            </td>
+                            <td class="text-left align-middle">
+                                2025-2030
+                            </td>
+
+                            <td class="text-left align-middle">
+                                12/01/2023
+                            </td>
+                            <td class="text-left align-middle">
+                                <div class="font-weight-bold">Tạ Mạnh Hoàng - SCN0001</div>
+                                <div class="text-gray">Tổng Giám đốc Điều hành</div>
+                            </td>
+                            <td class="text-center align-middle">
+                                <div class="align-self-center justify-content-center tab_user">
+                                    <span class="status-red">
+                                        Đang điều chỉnh
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="text-center align-middle">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                </div>
+                            </td>
+                            <td class="text-center align-middle">
+                                <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
+                                    <span class="cursor-hand">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.5 5.25C5 5.25 2 12.0007 2 12.0007C2 12.0007 5 18.75 12.5 18.75C20 18.75 23 12.0007 23 12.0007C23 12.0007 20 5.25 12.5 5.25Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.5 15.75C14.5711 15.75 16.25 14.0711 16.25 12C16.25 9.92893 14.5711 8.25 12.5 8.25C10.4289 8.25 8.75 9.92893 8.75 12C8.75 14.0711 10.4289 15.75 12.5 15.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                                    </span>
+                                </a>
                             </td>
                         </tr>
                         </tbody>
