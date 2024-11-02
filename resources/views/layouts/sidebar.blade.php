@@ -6,32 +6,27 @@
     <div class="sidebar">
         <!-- Sidebar Menu -->
         <nav>
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                {{-- <li class="nav-item rounded bg-white-opacity-10-hover {{request()->is('home') ? 'bg-white-opacity-10' : ''}}">
-                    <a href="{{route('home')}}" class="nav-link text-white">
+            <ul class="nav nav-pills nav-sidebar flex-column position-relative" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link fa-caret-down-target bg-white-opacity-10-hover" style="color: #fff">
                         <i class="fa-solid fa-house"></i>
-                        <p>Home</p>
+                        <p style="padding-left: 8px;">Dashboard</p>
                     </a>
-                </li> --}}
+                </li>
                 <template x-for="menu in menus">
-                    <li class="nav-item"
-                        :class="menu.children.map(child => child.url).includes(window.location.pathname) ? 'menu-is-opening menu-open' : ''">
-                        <a href="#" class="nav-link text-white">
+                    <li class="nav-item" :class="menu.children.map(child => child.url).includes(window.location.pathname) ? 'menu-is-opening menu-open' : ''">
+                        <a href="javascript:void(0)" class="nav-link fa-caret-down-target bg-white-opacity-10-hover" style="color: #fff">
                             <i :class="menu.icon"></i>
-                            <p>
-                                <span x-text="menu.name"></span>
-                                <i x-show="menu.children.length > 0" class="right fas fa-angle-left"></i>
-                            </p>
+                            <p style="padding-left: 8px;" x-text="menu.name"></p>
+                            <i x-show="menu.children.length > 0" class="fa fa-caret-down float-right"></i>
                         </a>
-                        <ul class="nav nav-treeview disc pl-10">
+                        <ul class="nav nav-treeview">
                             <template x-for="child in menu.children">
-                                <li class="nav-item rounded text-white bg-white-opacity-10-hover"
-                                    :class="window.location.pathname === child.url ? 'bg-white-opacity-10' : 'bg-white-opacity-10-hover'">
-                                    <a :href="child.url" class="text-decoration-none text-white">
-                                        <p class="p-1">
-                                            <i :class="child.icon"></i>
-                                            <span class="pl-1" x-text="child.name"></span>
-                                        </p>
+                                <li class="nav-item" :class="window.location.pathname === child.url ? 'bg-white-opacity-10' : 'bg-white-opacity-10-hover'">
+                                    <a :href="child.url" class="nav-link text-decoration-none text-white">&nbsp;&nbsp;
+                                        {{-- <i :class="child.icon !='' ? child.icon : 'bi bi-record-fill'" style="font-size: 10px"></i> --}}
+                                        <i class="bi bi-record-fill" style="font-size: 10px"></i>
+                                        <p x-text="child.name"></p>
                                     </a>
                                 </li>
                             </template>
