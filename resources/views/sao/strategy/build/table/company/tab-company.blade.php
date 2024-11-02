@@ -61,14 +61,14 @@
                             <th class="text-center">Thời gian tạo</th>
                             <th class="text-center">Người tạo</th>
                             <th class="text-center">Trạng thái chiến lược</th>
-                            <th class="text-center">
-                                Áp dụng
-                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.5 13.625C10.6066 13.625 13.125 11.1066 13.125 8C13.125 4.8934 10.6066 2.375 7.5 2.375C4.3934 2.375 1.875 4.8934 1.875 8C1.875 11.1066 4.3934 13.625 7.5 13.625Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7.5 5.1875V8.46875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7.5 11.1641C7.8236 11.1641 8.08594 10.9017 8.08594 10.5781C8.08594 10.2545 7.8236 9.99219 7.5 9.99219C7.1764 9.99219 6.91406 10.2545 6.91406 10.5781C6.91406 10.9017 7.1764 11.1641 7.5 11.1641Z" fill="black"/>
-                                </svg>
-                            </th>
+{{--                            <th class="text-center">--}}
+{{--                                Áp dụng--}}
+{{--                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                    <path d="M7.5 13.625C10.6066 13.625 13.125 11.1066 13.125 8C13.125 4.8934 10.6066 2.375 7.5 2.375C4.3934 2.375 1.875 4.8934 1.875 8C1.875 11.1066 4.3934 13.625 7.5 13.625Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>--}}
+{{--                                    <path d="M7.5 5.1875V8.46875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>--}}
+{{--                                    <path d="M7.5 11.1641C7.8236 11.1641 8.08594 10.9017 8.08594 10.5781C8.08594 10.2545 7.8236 9.99219 7.5 9.99219C7.1764 9.99219 6.91406 10.2545 6.91406 10.5781C6.91406 10.9017 7.1764 11.1641 7.5 11.1641Z" fill="black"/>--}}
+{{--                                </svg>--}}
+{{--                            </th>--}}
                             <th class="text-center">Hành động</th>
                         </tr>
                         </thead>
@@ -100,11 +100,11 @@
                                     </span>
                                 </div>
                             </td>
-                            <td class="text-center align-middle">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
-                                </div>
-                            </td>
+{{--                            <td class="text-center align-middle">--}}
+{{--                                <div class="form-check form-switch">--}}
+{{--                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">--}}
+{{--                                </div>--}}
+{{--                            </td>--}}
                             <td class="text-center align-middle">
                                 <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
                                     <span class="cursor-hand">
@@ -121,7 +121,7 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
+                                <a data-bs-target="#delete" data-bs-toggle="modal">
                                     <span class="cursor-hand">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3 6H21" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -157,13 +157,8 @@
                             <td class="text-center align-middle">
                                 <div class="align-self-center justify-content-center tab_user">
                                     <span class="status-violet">
-                                        Đang thiết lập
+                                        Công ty đang thiết lập
                                     </span>
-                                </div>
-                            </td>
-                            <td class="text-center align-middle">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
                                 </div>
                             </td>
                             <td class="text-center align-middle">
@@ -186,7 +181,7 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
+                                <a data-bs-target="#send" data-bs-toggle="modal">
                                     <span class="cursor-hand">
                                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M20.2119 3.3641L2.74367 8.29104C2.59671 8.33249 2.46591 8.4178 2.36874 8.53558C2.27157 8.65336 2.21266 8.79799 2.19989 8.95015C2.18712 9.1023 2.2211 9.25473 2.29728 9.38706C2.37346 9.51939 2.48821 9.62531 2.6262 9.69068L10.6522 13.4925C10.8088 13.5666 10.9348 13.6927 11.009 13.8492L14.8107 21.8752C14.8761 22.0132 14.982 22.128 15.1144 22.2041C15.2467 22.2803 15.3991 22.3143 15.5513 22.3015C15.7034 22.2888 15.8481 22.2299 15.9658 22.1327C16.0836 22.0355 16.1689 21.9047 16.2104 21.7578L21.1373 4.28953C21.1735 4.16122 21.1749 4.02558 21.1412 3.89658C21.1075 3.76758 21.0401 3.64988 20.9458 3.55561C20.8515 3.46134 20.7339 3.3939 20.6048 3.36024C20.4758 3.32658 20.3402 3.32791 20.2119 3.3641Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -218,14 +213,9 @@
                             </td>
                             <td class="text-center align-middle">
                                 <div class="align-self-center justify-content-center tab_user">
-                                    <span class="status-blue">
-                                        Đang áp dụng
+                                    <span class="status-yellow">
+                                        Đơn vị đang thiết lập
                                     </span>
-                                </div>
-                            </td>
-                            <td class="text-center align-middle">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
                                 </div>
                             </td>
                             <td class="text-center align-middle">
@@ -234,6 +224,13 @@
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.75 21V18.8284C2.75 18.4969 2.8817 18.179 3.11611 17.9445L16.5303 4.53033C17.342 3.71865 18.658 3.71865 19.4697 4.53033C20.2813 5.34201 20.2813 6.65799 19.4697 7.46967L6.05546 20.8839C5.82104 21.1183 5.50309 21.25 5.17157 21.25H3C2.86193 21.25 2.75 21.1381 2.75 21Z" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M15 7L17 9" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a data-bs-target="#pin" data-bs-toggle="modal">
+                                    <span class="cursor-hand">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.812 8.79342L15.212 2.19342C15.0379 2.01931 14.8102 1.93359 14.5825 1.93359C14.3549 1.93359 14.1272 2.01931 13.9531 2.19342L9.6379 6.51127C9.31112 6.47377 8.98165 6.4577 8.65219 6.4577C6.69147 6.4577 4.73076 7.10324 3.12094 8.39431C3.02345 8.47258 2.94355 8.57052 2.88644 8.68173C2.82933 8.79294 2.79628 8.91494 2.78946 9.03977C2.78264 9.16461 2.80219 9.28948 2.84684 9.40626C2.89149 9.52303 2.96024 9.62909 3.04862 9.71752L7.91558 14.5845L2.14594 20.3488C2.07524 20.419 2.0316 20.512 2.02272 20.6113L1.93165 21.6077C1.90755 21.8595 2.10844 22.0738 2.35755 22.0738C2.37094 22.0738 2.38433 22.0738 2.39772 22.0711L3.39415 21.98C3.49326 21.972 3.58701 21.9265 3.65665 21.8568L9.4263 16.0872L14.2933 20.9541C14.4674 21.1282 14.695 21.214 14.9227 21.214C15.1825 21.214 15.4397 21.1015 15.6165 20.8818C17.1245 18.9988 17.7513 16.6416 17.4968 14.3622L21.812 10.047C22.1575 9.70413 22.1575 9.14163 21.812 8.79342ZM16.1308 13.0041L15.4745 13.6604L15.5763 14.5818C15.7359 16.007 15.4515 17.4467 14.762 18.7041L5.30397 9.24074C5.64951 9.05056 6.00844 8.88984 6.38344 8.76127C7.11201 8.50949 7.8754 8.38359 8.65219 8.38359C8.90933 8.38359 9.16915 8.39699 9.4263 8.42645L10.3477 8.52824L11.004 7.87199L14.5852 4.29074L19.7147 9.4202L16.1308 13.0041Z" fill="black" fill-opacity="0.85"/>
                                         </svg>
                                     </span>
                                 </a>
@@ -261,28 +258,78 @@
                             </td>
                             <td class="text-center align-middle">
                                 <div class="align-self-center justify-content-center tab_user">
-                                    <span class="status-red">
-                                        Đang điều chỉnh
+                                    <span class="status-blue">
+                                        Đang áp dụng
                                     </span>
-                                </div>
-                            </td>
-                            <td class="text-center align-middle">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
                                 </div>
                             </td>
                             <td class="text-center align-middle">
                                 <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
                                     <span class="cursor-hand">
-                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12.5 5.25C5 5.25 2 12.0007 2 12.0007C2 12.0007 5 18.75 12.5 18.75C20 18.75 23 12.0007 23 12.0007C23 12.0007 20 5.25 12.5 5.25Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12.5 15.75C14.5711 15.75 16.25 14.0711 16.25 12C16.25 9.92893 14.5711 8.25 12.5 8.25C10.4289 8.25 8.75 9.92893 8.75 12C8.75 14.0711 10.4289 15.75 12.5 15.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.75 21V18.8284C2.75 18.4969 2.8817 18.179 3.11611 17.9445L16.5303 4.53033C17.342 3.71865 18.658 3.71865 19.4697 4.53033C20.2813 5.34201 20.2813 6.65799 19.4697 7.46967L6.05546 20.8839C5.82104 21.1183 5.50309 21.25 5.17157 21.25H3C2.86193 21.25 2.75 21.1381 2.75 21Z" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 7L17 9" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a data-bs-target="#unpin" data-bs-toggle="modal">
+                                    <span class="cursor-hand">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 18V22.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M17.985 14.0931L16.943 3.67536C16.9245 3.49029 16.8379 3.3187 16.7 3.1939C16.5621 3.06911 16.3827 3 16.1968 3H7.87305" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.79798 6.27734L6.05337 13.7218C6.04336 13.831 6.00949 13.9368 5.95414 14.0315C5.8988 14.1262 5.82333 14.2077 5.73307 14.2701C4.75885 14.9278 4.08039 15.9403 3.84259 17.0914C3.81935 17.2009 3.8208 17.3141 3.84684 17.4229C3.87287 17.5317 3.92284 17.6334 3.9931 17.7204C4.06337 17.8075 4.15215 17.8778 4.25301 17.9262C4.35386 17.9747 4.46424 18 4.57612 18.0004H17.4553" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.14062 2.25L20.8594 21.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
 
                                     </span>
                                 </a>
                             </td>
                         </tr>
+                        <tr>
+                            <td class="text-center align-middle">
+                                5
+                            </td>
+                            <td class="text-left align-middle">
+                                <a href="/sao/strategy/build/detail-company" class="text-primary" target="_blank">
+                                    Chiến lược BU cấp quyền nhân vật 2025-2030
+                                </a>
+                            </td>
+                            <td class="text-left align-middle">
+                                2025-2030
+                            </td>
+
+                            <td class="text-left align-middle">
+                                12/01/2023
+                            </td>
+                            <td class="text-left align-middle">
+                                <div class="font-weight-bold">Tạ Mạnh Hoàng - SCN0001</div>
+                                <div class="text-gray">Tổng Giám đốc Điều hành</div>
+                            </td>
+                            <td class="text-center align-middle">
+                                <div class="align-self-center justify-content-center tab_user">
+                                    <span class="status-red">
+                                        Dừng áp dụng
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="text-center align-middle">
+                                <a data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
+                                    <span class="cursor-hand">
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.643 6.48002C15.7386 2.46819 12.8598 0.449219 9.0006 0.449219C5.13944 0.449219 2.26266 2.46819 0.358194 6.48203C0.281805 6.64378 0.242188 6.82045 0.242188 6.99933C0.242188 7.17821 0.281805 7.35488 0.358194 7.51663C2.26266 11.5285 5.14145 13.5474 9.0006 13.5474C12.8618 13.5474 15.7386 11.5285 17.643 7.51462C17.7977 7.18917 17.7977 6.8115 17.643 6.48002ZM9.0006 12.101C5.7602 12.101 3.38766 10.4577 1.71422 6.99833C3.38766 3.53895 5.7602 1.89565 9.0006 1.89565C12.241 1.89565 14.6136 3.53895 16.287 6.99833C14.6156 10.4577 12.243 12.101 9.0006 12.101ZM8.92025 3.46261C6.96757 3.46261 5.38453 5.04565 5.38453 6.99833C5.38453 8.951 6.96757 10.534 8.92025 10.534C10.8729 10.534 12.456 8.951 12.456 6.99833C12.456 5.04565 10.8729 3.46261 8.92025 3.46261ZM8.92025 9.24833C7.67672 9.24833 6.67025 8.24185 6.67025 6.99833C6.67025 5.7548 7.67672 4.74833 8.92025 4.74833C10.1638 4.74833 11.1702 5.7548 11.1702 6.99833C11.1702 8.24185 10.1638 9.24833 8.92025 9.24833Z" fill="#101828"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a data-bs-target="#pin" data-bs-toggle="modal">
+                                    <span class="cursor-hand">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.812 8.79342L15.212 2.19342C15.0379 2.01931 14.8102 1.93359 14.5825 1.93359C14.3549 1.93359 14.1272 2.01931 13.9531 2.19342L9.6379 6.51127C9.31112 6.47377 8.98165 6.4577 8.65219 6.4577C6.69147 6.4577 4.73076 7.10324 3.12094 8.39431C3.02345 8.47258 2.94355 8.57052 2.88644 8.68173C2.82933 8.79294 2.79628 8.91494 2.78946 9.03977C2.78264 9.16461 2.80219 9.28948 2.84684 9.40626C2.89149 9.52303 2.96024 9.62909 3.04862 9.71752L7.91558 14.5845L2.14594 20.3488C2.07524 20.419 2.0316 20.512 2.02272 20.6113L1.93165 21.6077C1.90755 21.8595 2.10844 22.0738 2.35755 22.0738C2.37094 22.0738 2.38433 22.0738 2.39772 22.0711L3.39415 21.98C3.49326 21.972 3.58701 21.9265 3.65665 21.8568L9.4263 16.0872L14.2933 20.9541C14.4674 21.1282 14.695 21.214 14.9227 21.214C15.1825 21.214 15.4397 21.1015 15.6165 20.8818C17.1245 18.9988 17.7513 16.6416 17.4968 14.3622L21.812 10.047C22.1575 9.70413 22.1575 9.14163 21.812 8.79342ZM16.1308 13.0041L15.4745 13.6604L15.5763 14.5818C15.7359 16.007 15.4515 17.4467 14.762 18.7041L5.30397 9.24074C5.64951 9.05056 6.00844 8.88984 6.38344 8.76127C7.11201 8.50949 7.8754 8.38359 8.65219 8.38359C8.90933 8.38359 9.16915 8.39699 9.4263 8.42645L10.3477 8.52824L11.004 7.87199L14.5852 4.29074L19.7147 9.4202L16.1308 13.0041Z" fill="black" fill-opacity="0.85"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+
                         </tbody>
                     </table>
                 </div>

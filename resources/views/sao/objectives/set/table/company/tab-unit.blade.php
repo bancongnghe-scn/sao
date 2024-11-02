@@ -74,7 +74,7 @@
                         <tr>
                             <th class="text-center align-middle"><input type="checkbox" class="bg-checked form-check" checked></th>
                             <td class="text-left align-middle">
-                                <a href="/sao/strategy/build/detail-unit" target="_blank">
+                                <a href="/sao/objectives/set/detail-unit" target="_blank">
                                     BU Wolfoo
                                 </a>
                             </td>
@@ -124,7 +124,7 @@
                         <tr>
                             <th class="text-center align-middle"><input type="checkbox" class="bg-checked" ></th>
                             <td class="text-left align-middle">
-                                <a href="/sao/strategy/build/detail-unit" target="_blank">
+                                <a href="/sao/objectives/set/detail-unit" target="_blank">
                                     Ban Công nghệ
                                 </a>
                             </td>
@@ -174,7 +174,7 @@
                         <tr>
                             <th class="text-center align-middle"><input type="checkbox" class="bg-checked"></th>
                             <td class="text-left align-middle">
-                                <a href="/sao/strategy/build/detail-unit" target="_blank">
+                                <a href="/sao/objectives/set/detail-unit" target="_blank">
                                     Ban NSHC
                                 </a>
                             </td>
@@ -229,7 +229,7 @@
                         <tr>
                             <th class="text-center align-middle"><input type="checkbox" class="bg-checked" checked></th>
                             <td class="text-left align-middle">
-                                <a href="/sao/strategy/build/detail-unit" target="_blank">
+                                <a href="/sao/objectives/set/detail-unit" target="_blank">
                                     BU Wolfoo
                                 </a>
                             </td>

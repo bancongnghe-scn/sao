@@ -31,17 +31,21 @@
             </ul>
         </div>
         <div class="tab-content pt-3">
-            @include('sao.strategy.build.table.company.tab-company')
-            @include('sao.strategy.build.table.company.tab-unit')
-            @include('sao.strategy.build.table.company.tab-map')
+{{--            @include('sao.strategy.build.table.company.tab-company')--}}
+{{--            @include('sao.strategy.build.table.company.tab-unit')--}}
+{{--            @include('sao.strategy.build.table.company.tab-map')--}}
 
-{{--            @include('sao.strategy.build.table.unit.tab-company')--}}
-{{--            @include('sao.strategy.build.table.unit.tab-unit')--}}
-{{--            @include('sao.strategy.build.table.unit.tab-map')--}}
+            @include('sao.strategy.build.table.unit.tab-company')
+            @include('sao.strategy.build.table.unit.tab-unit')
+            @include('sao.strategy.build.table.unit.tab-map')
         </div>
     </div>
 
     @include('sao.strategy.build.popup.popup-create')
+    @include('sao.strategy.build.popup.popup-delete')
+    @include('sao.strategy.build.popup.popup-pin')
+    @include('sao.strategy.build.popup.popup-unpin')
+    @include('sao.strategy.build.popup.popup-send')
 @endsection
 @section('js')
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>

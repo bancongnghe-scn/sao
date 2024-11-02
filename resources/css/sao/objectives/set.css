@@ -63,7 +63,7 @@
     width: 100%;
     max-width: 600px;
     margin-bottom: 6px;
-    padding: 16px 20px;
+    padding: 10px 20px;
     border: 1px solid #ddd;
     border-radius: 16px;
     background-color: #fff;
@@ -81,6 +81,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px 10px;
+}
+
+.info-header .title-info {
+    font-size: 22px;
+    font-weight: 600;
+    color: #21252B;
 }
 
 .info-item {
