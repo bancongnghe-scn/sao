@@ -51,10 +51,13 @@
                         style="margin-right: 0px;padding-right: 0px;">
                         <div class="d-flex justify-content-end">
                             <div>
-                                <button class="btn btn-sm btn-success mr-2 h-100 text-nowrap" data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
-                                    <i class="bi bi-plus"></i>
-                                    <span class="">Thêm mới</span>
-                                </button>
+                                @can('Xóa màn tầm nhìn sứ mệnh')
+                                    <button class="btn btn-sm btn-success mr-2 h-100 text-nowrap" data-bs-target="#addVisionMissionCompany" data-bs-toggle="modal">
+                                        <i class="bi bi-plus"></i>
+                                        <span class="">Thêm mới</span>
+                                    </button>
+                                @endcan
+                                
                             </div>
                         </div>
                     </div>

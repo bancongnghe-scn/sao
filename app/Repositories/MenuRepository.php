@@ -21,7 +21,7 @@ class MenuRepository extends BaseRepository
             $query->whereIn('id', Arr::wrap($filters['id']));
         }
 
-        return $query->get();
+        return $query->orderBy('order')->get();
     }
 
     public function getFirst($filters, $columns = ['*'])
