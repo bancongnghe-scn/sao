@@ -11,14 +11,14 @@
 @section('content')
     <div class="container-fluid">
         <section class="section-mission">
-            <div class="row mb-3">
+            <div class="row">
                 <div class="row col-12 col-sm-12 col-lg-12 col-xl-9" style="margin-right: auto;">
                     <div class="col-xl-12 col-md-12 mb-2 align-middle d-flex justify-content-start">
                         <span class="title-strategy mr-2">Chiến lược phát triển Ban HCNS tầm nhìn nhìn 2024-2030</span>
-                        <div class="d-flex align-self-center justify-content-center">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                            </div>
+                        <div class="d-flex align-self-center justify-content-center ml-2">
+                                <span class="status-blue">
+                                    Chờ duyệt
+                                </span>
                         </div>
                     </div>
                 </div>
@@ -53,11 +53,6 @@
                         <div class="info-header d-flex align-self-center justify-content-between align-middle">
                             <div class="d-flex">
                                 <span class="title-info text-nowrap">Thông tin chung </span>
-                                <div class="d-flex align-self-center justify-content-center ml-2">
-                                <span class="status-blue" style="width: 80px;">
-                                    Chờ duyệt
-                                </span>
-                                </div>
                             </div>
 
                             <button class="btn">
@@ -128,16 +123,41 @@
                                             <div class="form-group">
                                                 <div class="history">
                                                     <div class="content-history overflow-auto">
-                                                        <table class="table table-bordered" id="table-history">
-                                                            <thead>
-                                                            <tr>
-                                                                <th scope="col">Thời gian</th>
-                                                                <th scope="col">Nội dung</th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            </tbody>
-                                                        </table>
+                                                        <div class="notification-wrapper">
+                                                            <div class="vertical-line"></div>
+                                                            <span class="dot dot-purple"></span>
+                                                            <div class="notification-card">
+                                                                <div class="notification-content">
+                                                                    <div class="notification-time">15h30 - 01/02/2023</div>
+                                                                    <div><strong>Nguyễn Tiến Dũng _ SCN1352</strong> đã điều chỉnh chiến lược</div>
+                                                                </div>
+                                                                <i class="fas fa-eye notification-eye"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="notification-wrapper">
+                                                            <div class="vertical-line"></div>
+                                                            <span class="dot dot-blue"></span>
+                                                            <div class="notification-card">
+                                                                <div class="notification-content">
+                                                                    <div class="notification-time">15h30 - 01/02/2023</div>
+                                                                    <div><strong>Nguyễn Tiến Dũng _ SCN1352</strong> đã điều chỉnh mục tiêu</div>
+                                                                </div>
+                                                                <i class="fas fa-eye notification-eye"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="notification-wrapper">
+                                                            <div class="vertical-line"></div>
+                                                            <span class="dot dot-yellow"></span>
+                                                            <div class="notification-card">
+                                                                <div class="notification-content">
+                                                                    <div class="notification-time">15h30 - 01/02/2023</div>
+                                                                    <div><strong>Nguyễn Tiến Dũng _ SCN1352</strong> đã điều chỉnh mục tiêu</div>
+                                                                </div>
+                                                                <i class="fas fa-eye notification-eye"></i>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

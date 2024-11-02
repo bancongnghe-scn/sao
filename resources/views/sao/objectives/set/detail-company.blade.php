@@ -12,7 +12,7 @@
 @section('content')
 <div class="container-fluid">
     <section class="section-mission">
-        <div class="row mb-3">
+        <div class="row">
             <div class="row col-12 col-sm-12 col-lg-12 col-xl-9" style="margin-right: auto;">
                 <div class="col-xl-12 col-md-12 mb-2 align-middle d-flex justify-content-start">
                     <span class="title-strategy mr-2">Bộ 7 mục tiêu Tổng Công Ty năm 2025 </span>
@@ -64,8 +64,17 @@
                                         <div class="form-group">
                                             <div class="proposal-comment">
                                                 <div class="info-container">
-                                                    <div class="info-header">
-                                                        <h2>Thông tin chung</h2>
+                                                    <div class="info-header d-flex align-self-center justify-content-between align-middle">
+                                                        <div class="d-flex">
+                                                            <span class="title-info text-nowrap">Thông tin chung </span>
+                                                        </div>
+
+                                                        <button class="btn">
+                                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M2.75 21.5V19.3284C2.75 18.9969 2.8817 18.679 3.11611 18.4445L16.5303 5.03033C17.342 4.21865 18.658 4.21865 19.4697 5.03033C20.2813 5.84201 20.2813 7.15799 19.4697 7.96967L6.05546 21.3839C5.82104 21.6183 5.50309 21.75 5.17157 21.75H3C2.86193 21.75 2.75 21.6381 2.75 21.5Z" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M15 7.5L17 9.5" stroke="#344054" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
                                                     </div>
 
                                                     <div class="info-content">
@@ -156,7 +165,7 @@
             </div>
         </div>
     </section>
-    @include('sao.objectives.set.popup.popup-create-objectives-company')
+    @include('sao.objectives.set.popup.popup-allocation-objectives')
 </div>
 @endsection
 @section('js')

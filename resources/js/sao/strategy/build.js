@@ -235,9 +235,8 @@ function tree()
     $.fn.extend({
         treed: function (o) {
 
-            let openedClass = 'fa-minus-circle';
-            let closedClass = 'fa-plus-circle';
-
+            let openedClass = 'fas fa-caret-up';
+            let closedClass = 'fas fa-caret-down';
             if (typeof o != 'undefined'){
                 if (typeof o.openedClass != 'undefined'){
                     openedClass = o.openedClass;
@@ -254,8 +253,8 @@ function tree()
                 branch.prepend("<i class='indicator fas " + closedClass + "'></i>");
                 branch.addClass('branch');
                 branch.on('click', function (e) {
-                    if (this == e.target) {
-                        let icon = $(this).children('i:first');
+                    if (this === e.target) {
+                        let icon = $(this).children('svg:first');
                         icon.toggleClass(openedClass + " " + closedClass);
                         $(this).children().children().toggle();
                     }
@@ -288,6 +287,8 @@ function tree()
 
 
     $('#tree1').treed();
-    $('#tree2').treed({openedClass:'fa-folder-open', closedClass:'fa-folder'});
+    $('#tree2').treed();
     $('#tree3').treed();
+    $('#tree4').treed();
+    $('#tree5').treed();
 }

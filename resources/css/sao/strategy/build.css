@@ -96,7 +96,7 @@
     width: 100%;
     max-width: 600px;
     margin-bottom: 6px;
-    padding: 20px;
+    padding: 10px 20px;
     border: 1px solid #ddd;
     border-radius: 16px;
     background-color: #fff;
@@ -149,7 +149,7 @@
 }
 
 .section-header {
-    color: #28a745;
+    color: #28a745 !important;
     padding: 10px;
     cursor: pointer;
     margin-bottom: 10px;
@@ -160,17 +160,16 @@
     justify-content: flex-start;
 }
 
+.text-green{
+    color: #28a745 !important;
+    font-weight: bold;
+}
+
 .arrow-icon {
     font-size: 16px;
     color: #28a745;
     transition: transform 0.3s;
     margin-right: 10px;
-}
-
-.section-header {
-    display: flex;
-    align-items: center;
-
 }
 
 .arrow-icon {
@@ -184,22 +183,23 @@
     padding: 2px 8px;
     border-radius: 15px 0 0 15px;
     font-size: 12px;
-    display: flex;
-    align-items: center;
+    font-weight: bold;
+    /*display: flex;*/
+    /*align-items: center;*/
     margin-left: 15px;
 }
 
 .label-box::after {
     content: '';
     position: absolute;
-    right: -25px;
+    right: -24px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-51%);
     width: 0;
     height: 0;
-    border-left: 25px solid #fddde6;
-    border-top: 13px solid transparent;
-    border-bottom: 13px solid transparent;
+    border-left: 24px solid #fddde6;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
 }
 
 svg {
@@ -297,7 +297,7 @@ input[type="checkbox"]:checked {
 }
 
 .title-text{
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 600;
     color: #101828;
 }
@@ -334,10 +334,9 @@ textarea.form-control {
     margin:0;
     padding:0;
     list-style:none;
-    margin-left:10px;
 }
 .tree ul {
-    margin-left:1em;
+    margin-left: 18px;
     position:relative
 }
 .tree ul ul {
@@ -355,15 +354,16 @@ textarea.form-control {
 }
 .tree li {
     margin:0;
-    padding:0 3em;
+    /*padding:0 3em;*/
     line-height:2em;
-    color:#667085;
-    position:relative
+    color:#BFBFBF;
+    position:relative;
+    padding-left: 30px;
 }
 .tree ul li:before {
     content:"";
     display:block;
-    width:30px;
+    width:20px;
     height:0;
     border-top:1px solid;
     margin-top:-1px;
@@ -389,8 +389,8 @@ textarea.form-control {
     color:#667085;
     border:none;
     background:transparent;
-    margin:0px 0px 0px 0px;
-    padding:0px 0px 0px 0px;
+    margin: 0;
+    padding: 0;
     outline: 0;
 }
 
@@ -408,4 +408,52 @@ textarea.form-control {
 
 .level-4{
     font-weight: 300;
+}
+
+.notification-wrapper {
+    display: flex;
+    position: relative;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+.vertical-line {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #A3A3A3;
+}
+.dot {
+    position: absolute;
+    left: 7px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.dot-purple { background-color: #b388eb; }
+.dot-blue { background-color: #00bcd4; }
+.dot-yellow { background-color: #ffb300; }
+.notification-card {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 3px 20px 0px #00000026;
+
+    flex-grow: 1;
+}
+.notification-content {
+    flex-grow: 1;
+}
+.notification-time {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+.notification-eye {
+    font-size: 1.2em;
+    color: #007bff;
 }
